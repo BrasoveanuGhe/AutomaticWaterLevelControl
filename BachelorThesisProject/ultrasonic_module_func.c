@@ -27,7 +27,7 @@ inline void risingEdge_duration()
 {
 	// Represent the time when the echo signal was high
 	count = ((TimerOverflow*TIMER_MAX)+tc1_get_current_cValue());	// Counter count
-	distance = (count/(CONVERT_TO_CM*CYCLE_PER_US));				// Distance in cm
+	distance = (count/(CONVERT_TO_CM*CYCLE_PER_US));		// Distance in cm
 	
 	// If the measured distance is less than 3, it will be 2
 	/* MIN : 2 cm */
