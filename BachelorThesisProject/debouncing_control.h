@@ -14,7 +14,7 @@
 #include <stdio.h>
 
 /*******************************************************
-				  DEBOUNCING BUTTONS
+		DEBOUNCING BUTTONS
 ********************************************************/
 extern bool buttonPressed;
 extern bool checkButton1;
@@ -22,7 +22,7 @@ extern bool checkButton2;
 extern bool checkButton3;
 
 /*******************************************************
-					BUTTON COMMANDS
+		BUTTON COMMANDS
 ********************************************************/
 extern bool buttonStart;
 extern bool buttonStop;
