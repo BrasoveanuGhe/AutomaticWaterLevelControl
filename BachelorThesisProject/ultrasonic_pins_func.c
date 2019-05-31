@@ -30,9 +30,9 @@ inline void bitTriggerSonar(volatile uint8_t *port, uint8_t trig_pin )
 	ultrasonicInit.TRIG = trig_pin;
 
 	*(ultrasonicInit.UltrasonicPort) &= ~(1 << ultrasonicInit.TRIG);	// Clear pin before setting it high
-	_delay_us(1);														// Clear to zero and give time for electronics to set
+	_delay_us(1);								// Clear to zero and give time for electronics to set
 	*(ultrasonicInit.UltrasonicPort) |= (1 << ultrasonicInit.TRIG);		// Set pin high
-	_delay_us(10);														// Send high pulse for minimum 10us
+	_delay_us(10);								// Send high pulse for minimum 10us
 	*(ultrasonicInit.UltrasonicPort) &= ~(1 << ultrasonicInit.TRIG);	// Clear pin
 	_delay_us(1);
 }
