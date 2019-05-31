@@ -62,7 +62,7 @@ uint16_t set_topValuePWM(unsigned char timer, unsigned short topValue);
 				   
 				  
  * I/P Arguments:
-				  TIMER:	The variable used to specify the desired timer.
+				  TIMER:		The variable used to specify the desired timer.
 				  positionValue:	The variable used to obtain the position of servo motor in degrees 
 		               
  * Return value    : none
