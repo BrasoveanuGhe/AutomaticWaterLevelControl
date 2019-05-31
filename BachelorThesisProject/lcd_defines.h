@@ -44,7 +44,7 @@ void liquidCrystalPortInit(volatile uint8_t *dataPort,volatile  uint8_t *cmdPort
 				
 				 
  * \I/P Arguments: 8-bit command supported by LCD.
-				   v_lcdCmd:		Used to enter the address of the instructions.
+		   v_lcdCmd:		Used to enter the address of the instructions.
 				  
  * \Return value:  none
 ****************************************************************************************************/
@@ -56,7 +56,7 @@ void lcd_cmdWrite(uint8_t v_lcdCmd);
  * \description :  This functions is used to send a byte of data to LCD. 
  
  * \I/P Arguments: uint8_t: 8-bit value to be sent to LCD.
-				   dataByte:		Used to sends the data 'data' to the LCD module.
+			    dataByte:		Used to sends the data 'data' to the LCD module.
 				   
  * \Return value:  none                  
 **************************************************************************************************/
