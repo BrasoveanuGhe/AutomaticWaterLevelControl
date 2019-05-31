@@ -26,7 +26,7 @@ UltrasonicPins ultrasonicInit;
 
 
 /**
-* \brief				Initiate ultrasonic Module port, TRIG pin and ECHO pin
+* \brief			Initiate ultrasonic Module port, TRIG pin and ECHO pin
 *
 * \param PORT			Port address
 * \param TRIG_Pin		The pin on which the trigger signal is set
@@ -38,13 +38,13 @@ void ultrasonicModule_init(volatile uint8_t *port, uint8_t trig_pin, uint8_t ech
 
 
 /**
-* \brief				Send 10us pulse on Sonar Trigger pin
+* \brief			Send 10us pulse on Sonar Trigger pin
 *
 * \param Port			Port address
 * \param TRIG_Pin		Select the bit
-*						1.   Clear trigger pin before sending a pulse
-*						2.   Send high pulse to trigger pin for 10us
-*						3.   Clear trigger pin to pull it trigger pin low
+*				1.   Clear trigger pin before sending a pulse
+*				2.   Send high pulse to trigger pin for 10us
+*				3.   Clear trigger pin to pull it trigger pin low
 *
 * \return void
 */
