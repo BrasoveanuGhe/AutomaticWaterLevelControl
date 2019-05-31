@@ -41,19 +41,19 @@ void servoControlRotation()
 {
 	if(distance >= 8.8){
  		
- 		set_ServoPosition(timer3,170);					/*90 degree -> the actuator is closed*/
+ 		set_ServoPosition(timer3,170);				/*90 degree -> the actuator is closed*/
  		PORTB = (1 << PORTB4) | (0 << PORTB3);			/*the motor is on*/
  	}
  	
  	/*	the size of the water tank is -> 17.13 cm
  	
  		50% from 17.13 -> ( 50/100 ) * 17.13 = x 
- 							0.5 * 17.13 = x
- 							x = 8.56 (represents 50% of the water tank)
+ 					 0.5 * 17.13 = x
+ 					 x = 8.56 (represents 50% of the water tank)
  	*/
  	if((distance <= 8.8) && (distance >= 8.6)){	
  		
- 		set_ServoPosition(timer3,170);					/*90 degree -> the actuator is closed*/
+ 		set_ServoPosition(timer3,170);				/*90 degree -> the actuator is closed*/
  		PORTB = (0 << PORTB4) | (0 << PORTB3);			/*the motor is closed*/
  		
  		checkWaterLvl();			
@@ -61,7 +61,7 @@ void servoControlRotation()
  	
  	if(distance <= 8.6){
  		
- 		set_ServoPosition(timer3,115);					/*45 degree -> the actuator is open*/
+ 		set_ServoPosition(timer3,115);				/*45 degree -> the actuator is open*/
  		PORTB = (0 << PORTB4) | (0 << PORTB3);			/*the motor is closed*/
  	}		
 }
@@ -77,7 +77,7 @@ void debauncingTimer()
 	tc2_set_current_cValue(0);
 	
 	// After 0.1s generate the interrupt
-	OCR2 = 216;			//216 - 0.03s  //72 - 0.01s
+	OCR2 = 216;	//216 - 0.03s  //72 - 0.01s
 	
 	// Output Compare Match Interrupt Enable
 	tc2_set_interruptMask(TC2_MASK_OUTPUT);
@@ -120,7 +120,7 @@ void buttonsSequence()
 		lcd_goToLine(2,20);
 		lcd_displayChar("|");
 			
-		gpio_pinWrite(&PORTB,PORTB4,LOW);					/*the motor is closed*/
+		gpio_pinWrite(&PORTB,PORTB4,LOW);	/*the motor is closed*/
 	
 		buttonStart = true;
 		buttonStop = false;
@@ -144,7 +144,7 @@ void buttonsSequence()
 		lcd_displayChar("|");
 		
 		set_ServoPosition(timer3,170);
-		gpio_pinWrite(&PORTB,PORTB4,LOW);					/*the motor is closed*/
+		gpio_pinWrite(&PORTB,PORTB4,LOW);	/*the motor is closed*/
 		
 		buttonStop = true;
 		buttonStart = false;
@@ -168,7 +168,7 @@ void buttonsSequence()
 		lcd_displayChar("|");
 		
 		set_ServoPosition(timer3,57);
-		gpio_pinWrite(&PORTB,PORTB4,LOW);					/*the motor is closed*/
+		gpio_pinWrite(&PORTB,PORTB4,LOW);	/*the motor is closed*/
 				
 		buttonStop = true;
 		buttonStart = false;
