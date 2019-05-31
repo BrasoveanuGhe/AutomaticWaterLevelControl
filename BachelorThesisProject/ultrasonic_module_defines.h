@@ -25,9 +25,9 @@ bounce back 1 centimeter is 58.31 microseconds.
 ****************************************************/
 #define CONVERT_TO_CM 58.31
 #define CYCLE_PER_US (F_CPU/1000000)	// Instructions per microsecond
-#define N 8								// The N variable represents the prescaler factor
-#define MF_Variable 5.5					// The variable MF represents the value used to obtain the frequency
-#define val_Hz 1000						// Represents the maximum value of hertz
+#define N 8								            // The N variable represents the prescaler factor
+#define MF_Variable 5.5					      // The variable MF represents the value used to obtain the frequency
+#define val_Hz 1000						        // Represents the maximum value of hertz
 
 
 extern char string[20];
