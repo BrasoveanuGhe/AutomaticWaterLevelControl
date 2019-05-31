@@ -28,8 +28,8 @@ gpio_commandInit gpio_portInit;
  * description : This function sets the specified direction as INPUT/OUTPUT for PORT.  
  
  * I/P Arguments: 
-				PORT:	The port you want to use.
-                state:	Direction to be configured:  INPUT/OUTPUT.
+			PORT:	The port you want to use.
+                	state:	Direction to be configured:  INPUT/OUTPUT.
                              
  * Return value    : none
  ***************************************************************************************************/
@@ -41,9 +41,9 @@ void gpio_portDirection (volatile uint8_t *port, unsigned char state);
  * description : This function sets the specified direction as INPUT/OUTPUT.  
  
  * I/P Arguments: 
-				PORT:		The port you want to use.
+		PORT:		The port you want to use.
                 pinNumber:	Pin number which needs to be updated.
-                            Refer the gpio.h for pin numbering.
+                                Refer the gpio.h for pin numbering.
                 v_pinDir:	Direction to be configured:  INPUT/OUTPUT.
                               
 
@@ -57,9 +57,9 @@ void gpio_pinDirection(volatile uint8_t *port,unsigned char pinNumber, unsigned 
  * description : This function updates the specified value on the selected pin.
  
  * I/P Arguments:
-				PORT:		The port you want to use.
+		PORT:		The port you want to use.
                 pinNumber:	Pin number which needs to be updated.
-                            Refer the gpio.h for pin numbering.
+                            	Refer the gpio.h for pin numbering.
                 v_pinValue: Value to be updated(LOW/HIGH) on the selected pin.
                               
 
