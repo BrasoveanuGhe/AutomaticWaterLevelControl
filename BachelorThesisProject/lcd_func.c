@@ -26,10 +26,10 @@ void liquidCrystalPortInit(volatile uint8_t *dataPort, volatile uint8_t *cmdPort
 	*(lcd_portInit.commandPort - 1) |= (1 << lcd_portInit.pin_RS);
 	*(lcd_portInit.commandPort - 1) |= (1 << lcd_portInit.pin_RW);	
 	
-	lcd_cmdWrite(LCD_CLEAR);					// Clear LCD
-	lcd_cmdWrite(LCD_INCREMENT_RIGHT);			// Set entry mode set
+	lcd_cmdWrite(LCD_CLEAR);			// Clear LCD
+	lcd_cmdWrite(LCD_INCREMENT_RIGHT);		// Set entry mode set
 	lcd_cmdWrite(LCD_DISPLAY_ON_CURSOR_OFF);	// Set display on and don't show the cursor
-	lcd_cmdWrite(LCD_EIGHT_BIT_MODE);			// Set the 8 bit mode
+	lcd_cmdWrite(LCD_EIGHT_BIT_MODE);		// Set the 8 bit mode
 	lcd_cmdWrite(LCD_CURSOR_HOME_POSITION);		// Cursor at home position
 }
 
