@@ -20,7 +20,6 @@
 #define  util_BitSet(x,bit)            ((x) |=  util_GetBitMask(bit))
 #define  util_BitClear(x,bit)          ((x) &= ~util_GetBitMask(bit))
 #define  util_BitToggle(x,bit)         ((x) ^=  util_GetBitMask(bit))
-#define  util_UpdateBit(x,bit,val)     ((val)? util_BitSet(x,bit): util_BitClear(x,bit))
 /**************************************************************************************************/
 
 
